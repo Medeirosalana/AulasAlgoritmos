@@ -1,0 +1,34 @@
+package Estruturaderepeticaofor;
+
+import java.util.Scanner;
+
+public class exemplo5 {
+    public static void main(String[] args) {
+        Scanner entrada= new Scanner(System.in);
+        
+        
+
+        
+            System.out.print("Digite um nº");
+            int f=1, n= entrada.nextInt();
+            String p = "";
+            for(int i=n;i>0; i--){ 
+                if(i==1){
+                p += i;
+                }
+                else{
+                 
+                p += i + "x";} 
+                f *= i;
+                
+            }
+            
+            System.out.println(  n + "! = " + p+ " = " +f);
+            
+                
+            
+            
+       
+        }
+    }
+
