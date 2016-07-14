@@ -15,14 +15,14 @@ public class Questao1 {
             System.out.println("seu aumento é R$: "+ a);
             System.out.println("Seu salario atual é R$: " +(sa + a ) );
         }
-        else if (sa > 280f && sa<= 700f ){
+        else if ( sa<= 700f ){
             b = (sa * 0.15f );
             System.out.println("seu reajuste é: 15%");
             System.out.println("seu aumento é R$: " + b );
             System.out.println("Seu salario atual é R$: " +(sa + b ) );
         
         }
-        else if (sa > 700f && sa <= 1500f){
+        else if  (sa <= 1500f){
             c = sa * 0.10f;
         System.out.println("seu reajuste é: 10%");
         System.out.println("seu aumento é R$: " + c);

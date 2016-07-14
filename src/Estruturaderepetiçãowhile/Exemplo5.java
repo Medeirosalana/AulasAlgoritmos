@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Exemplo5 {
     public static void main(String[] args) {
         Scanner entrada= new Scanner(System.in);
-        int a=0, b=0, c=0, x=0, y=0 , v=0;
+        int a=0, b=0, c=0, x=0, y=0, v=0 ;
         String sair = "nao";
         do{ 
             System.out.println("votação\n"
@@ -41,23 +41,33 @@ public class Exemplo5 {
                     + c +" - candidato 3\n"
                     + x +" branco\n"
                     + y +" nulo ");
-        if ( a > b && a > c){
-            System.out.println("o vencedor é candidato 1");
         
+        float t =  a+b+c;
+     
+        if ((a / (a+b+c)> 0.5f) || (b/(a+b+c) > 0.5f) || (c/(a+b+c)>0.5f)){
+            System.out.println("Eleição em 1 turno");
+        
+        
+        if(a> b && a>c){
+            System.out.println("vencedor é o canditado 3");
         }
-        else if (b > a && b > c){
+        
+        else if (b > a && b > c  ){
             System.out.println("o vencedor é canditado 2");
         }
-        else {
+        
+        
+        else if (c > a && c > b && c > 50 ){
             System.out.println("o Vencedor é canditado 3");
         
         }
-        int t= 0;
-        t = a + b + c;
-        int pa;
-        pa = (a / t) / 100;
-        System.out.println("Porcentagem do candidato 1" + pa + "%");
-      
+        }
+        else {
+            System.out.println("Vai para segundo tuno");
+        }
+        
+        
+        
         
     }
     
